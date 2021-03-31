@@ -1,0 +1,103 @@
+{
+ "properties": {
+  "displayName": "Policy-AC",
+  "policyType": "Custom",
+  "description": "My policies",
+  "metadata": {
+   "version": "0.1",
+   "parameterScopes": {
+    "listOfAllowedLocations": "/subscriptions/16b30f09-3bb2-407f-bc82-c629fe1d51fe",
+    "listOfAllowedSKUs": "/subscriptions/16b30f09-3bb2-407f-bc82-c629fe1d51fe"
+   },
+   "createdBy": "cb7d8361-7930-4310-a830-e09d10ebde5c",
+   "createdOn": "2021-03-30T23:51:44.6073019Z",
+   "updatedBy": "cb7d8361-7930-4310-a830-e09d10ebde5c",
+   "updatedOn": "2021-03-31T00:10:11.1264444Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resource groups_Name",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8ce3da23-7156-49e4-b145-24f95f9dcb46",
+    "parameters": {
+     "tagName": {
+      "value": "Name"
+     },
+     "tagValue": {
+      "value": "Name"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Inherit a tag from the resource group if missing_Name",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Name"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "australiaeast",
+       "australiasoutheast"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Network interfaces should not have public IPs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83a86a26-fd1f-447c-b59d-e51f44264114",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed virtual machine size SKUs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "standard_b1s",
+       "standard_b1ms"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resource groups_Department",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8ce3da23-7156-49e4-b145-24f95f9dcb46",
+    "parameters": {
+     "tagName": {
+      "value": "Department"
+     },
+     "tagValue": {
+      "value": "Department"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Inherit a tag from the resource group if missing_Department",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "parameters": {
+     "tagName": {
+      "value": "Department"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/16b30f09-3bb2-407f-bc82-c629fe1d51fe/providers/Microsoft.Authorization/policySetDefinitions/c7e8102d914943c0b2709e8b",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "c7e8102d914943c0b2709e8b"
+}
